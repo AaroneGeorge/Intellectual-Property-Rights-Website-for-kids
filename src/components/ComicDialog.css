@@ -1,0 +1,46 @@
+.comic-dialog-container {
+    display: flex;
+    align-items: flex-start;
+    margin: 20px;
+  }
+
+  
+  .comic-dialog {
+    width: 350px; /* Adjust the width as needed */
+    background-color: #f5f5f5;
+    border: 2px solid #000;
+    border-radius: 10px;
+    padding: 10px;
+    font-family: Arial, sans-serif;
+    position: absolute; /* Change to 'relative' if needed */
+    top: 150px; /* Adjust the top position */
+    left: 250px; /* Adjust the left position */
+  }
+  
+  .comic-dialognoob {
+    width: 350px; /* Adjust the width as needed */
+    background-color: #f5f5f5;
+    border: 2px solid #000;
+    border-radius: 10px;
+    padding: 10px;
+    font-family: Arial, sans-serif;
+    position: absolute; /* Change to 'relative' if needed */
+    top: 150px; /* Adjust the top position */
+    left: 850px; /* Adjust the left position */
+  }
+  
+  .dialog-text {
+    margin: 0;
+    padding: 0;
+    line-height: 1.4;
+  }
+  
+  .comic-tail {
+    position: absolute;
+    border-width: 10px;
+    border-style: solid;
+    border-color: transparent transparent #f5f5f5 transparent;
+    top: -20px;
+    right: 10px;
+  }
+  
