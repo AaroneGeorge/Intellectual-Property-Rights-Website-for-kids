@@ -21,10 +21,10 @@ const images = [a, b, c, d, e, f, g, h, i, j, k, l, m, n, o];
 
 function Copyright() {
   const [currentIndex, setCurrentIndex] = useState(0);
-  const [formText, setFormText] = useState(''); // State to store the form input
+  const [formText, setFormText] = useState('');
+  const [points, setPoints] = useState(0); // State to store points
 
   const showImage = (index) => {
-    // Update the state to change the current image
     setCurrentIndex(index);
   };
 
@@ -34,20 +34,26 @@ function Copyright() {
 
   const handleFormSubmit = (e) => {
     e.preventDefault();
-    // Handle the form submission, e.g., submit the user's input to a server
     console.log('User submitted:', formText);
-    // Clear the form input field
     setFormText('');
 
     alert('Good Answer, redirecting to main menu');
-  // Clear the form input field
     setFormText('');
 
-  // Redirect to the homepage after a delay
     setTimeout(() => {
-      window.location.href = '/'; // Replace with the actual URL of your homepage
-    }, 300); // 500 milliseconds (0.5 seconds)
+      window.location.href = '/';
+    }, 300);
+  };
 
+  const handleYesClick = () => {
+    // Increment points by 25 when 'Yes' is clicked
+    setPoints(points + 25);
+    showImage(currentIndex + 1); // Proceed to the next index
+  };
+
+  const handleNoClick = () => {
+    // Provide an alert for wrong answer
+    alert('Wrong Answer');
   };
 
   return (
@@ -58,30 +64,29 @@ function Copyright() {
         <div className="options">
           {currentIndex === 5 ? (
             <>
-              <button className="yes">YES</button>
-              <button className="no">NO</button>
+              <button className="no" onClick={handleNoClick}>YES</button>
+              <button className="yes" onClick={handleYesClick}>NO</button>
             </>
           ) : currentIndex === 11 ? (
             <>
-              <button className="no">Because he was afraid of Dora</button>
-              <button className="yes">Because Dora had a copyright over the poem</button>
+              <button className="no" onClick={handleNoClick}>Because he was afraid of Dora</button>
+              <button className="yes" onClick={handleYesClick}>Because Dora had a copyright over the poem</button>
             </>
           ) : currentIndex === 12 ? (
             <>
-              <button className="yes">Because Dora had a copyright</button>
-              <button className="no">the swiper was very generous</button>
+              <button className="yes" onClick={handleYesClick}>Because Dora had a copyright</button>
+              <button className="no" onClick={handleNoClick}>the swiper was very generous</button>
             </>
           ) : currentIndex === 13 ? (
             <>
-              <button className="no">A copyright is a poem</button>
-              <button className="yes">A copyright is an IPR which protects things that people create</button>
+              <button className="no" onClick={handleNoClick}>A copyright is a poem</button>
+              <button className="yes" onClick={handleYesClick}>A copyright is an IPR which protects things that people create</button>
             </>
           ) : currentIndex === 14 ? (
             <form onSubmit={handleFormSubmit}>
               <input type="text" value={formText} onChange={handleFormChange} />
               <button type="submit" className="submit-button">Submit</button>
             </form>
-
           ) : null}
         </div>
       </div>
@@ -98,6 +103,9 @@ function Copyright() {
         >
           Next
         </button>
+      </div>
+      <div  class="button-62 points-bar">
+        Points: {points}
       </div>
     </div>
   );
