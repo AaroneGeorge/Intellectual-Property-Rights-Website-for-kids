@@ -1,0 +1,93 @@
+/* Copyright.css */
+/* Background image for the /copyright subpage */
+.background-copyright {
+  background-image: url('./images/bg.jpg'); /* Update the path */
+  background-size: cover; /* Adjust background size to cover the entire viewport */
+  background-position: center; /* Center the background image */
+  background-attachment: fixed; /* Fixed background so it doesn't scroll with the content */
+  /* You can add more styles as needed */
+  background-color: rgba(0, 0, 0, 0.1); /* Adjust the alpha (last) value to control transparency */
+}
+
+.slider-container {
+  width: 60%;
+  margin: 0 auto;
+  text-align: center;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  transition: transform 0.2s;
+}
+
+.slider-image {
+  width: 100%;
+  height: auto;
+}
+
+.question {
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+.options {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 10px;
+}
+
+.option {
+  padding: 5px 10px;
+  background-color: #007BFF;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+button {
+  padding: 5px 10px;
+  background-color: #007BFF;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+button#prev:hover, button#next:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.options .option:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+  color: #fff;
+  transition: background-color 0.3s, transform 0.3s, color 0.3s;
+}
+
+#prev {
+  float: left;
+}
+
+#next {
+  float: right;
+}
+
+/* Add space between the form and the submit button */
+.submit-button {
+  margin-left: 10px;
+}
+
+/* Hover effect for the submit button */
+.submit-button:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+  transition: background-color 0.3s, transform 0.3s;
+}

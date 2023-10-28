@@ -16,6 +16,10 @@ function FrontPage() {
     navigate('/right2no');
   };
 
+  const handleCopyrightCardClick = () => {
+
+    navigate('/copyright')
+  }
 
   const copyToClipboard = () => {
     const urlToCopy = window.location.href;
@@ -45,7 +49,7 @@ function FrontPage() {
         <h2>Intellectual Property Rights</h2>
       </div>
       <div className="container">
-        <div className="card">
+        <div className="card" onClick={handleCopyrightCardClick}>
           <h2>Copyright</h2>
           <p>
             Copyright is a legal protection granted to the original creators of various forms of creative work, such as literature, music, and art. It gives creators exclusive rights to reproduce, distribute, and display their work.

@@ -42,7 +42,7 @@ function MyComponent() {
 
       setTimeout(() => {
         navigate('/');
-      }, 1500);// Redirect to the home page after 1.5 seconds
+      }, 1000);// Redirect to the home page after 1.5 seconds
 
     }
   };
