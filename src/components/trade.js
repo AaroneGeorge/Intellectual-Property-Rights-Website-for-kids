@@ -35,9 +35,9 @@ function Navbar({ completedSets, totalSets }) {
             
           </li>
           <li>
-            <div className="progress-bar">
+            <div className="progress-bar1">
               <div
-                className="progress-status"
+                className="progress-status1"
                 style={{
                   width: `${(completedSets / totalSets) * 100}%`,
                 }}

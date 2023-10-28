@@ -26,6 +26,11 @@ function FrontPage() {
     navigate('/trade')
   }
 
+  const handleDesignCardClick = () => {
+
+    navigate('/design')
+  }
+
   const copyToClipboard = () => {
     const urlToCopy = window.location.href;
     const textField = document.createElement('textarea');
@@ -68,14 +73,14 @@ function FrontPage() {
           </p>
           <img src={patent1} alt="Patent" />
         </div>
-        <div className="card" onClick={handleTradeCardClick}>
+        <div className="card" onClick={handleDesignCardClick}>
           <h2>Design</h2>
           <p>
             Design rights protect the unique visual design and appearance of products. They prevent others from copying or imitating the design of a product.
           </p>
           <img src={design_guard} alt="Design" />
         </div>
-        <div className="card">
+        <div className="card" onClick={handleTradeCardClick}>
           <h2>Trademark</h2>
           <p>
             A trademark is a symbol, word, or phrase that distinguishes one company's goods or services from others. It helps establish brand identity and prevents others from using similar marks.
