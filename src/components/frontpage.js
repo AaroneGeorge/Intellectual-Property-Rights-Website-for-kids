@@ -21,6 +21,11 @@ function FrontPage() {
     navigate('/copyright')
   }
 
+  const handleTradeCardClick = () => {
+
+    navigate('/trade')
+  }
+
   const copyToClipboard = () => {
     const urlToCopy = window.location.href;
     const textField = document.createElement('textarea');
@@ -63,7 +68,7 @@ function FrontPage() {
           </p>
           <img src={patent1} alt="Patent" />
         </div>
-        <div className="card">
+        <div className="card" onClick={handleTradeCardClick}>
           <h2>Design</h2>
           <p>
             Design rights protect the unique visual design and appearance of products. They prevent others from copying or imitating the design of a product.
