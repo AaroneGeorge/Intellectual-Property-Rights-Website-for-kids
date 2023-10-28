@@ -113,9 +113,9 @@ function CardComponent() {
               </div>
             ))}
           </div>
-          <div className="progress-bar">
-            <div className="progress" style={{ width: `${(progress / totalSets) * 100}%` }}>
-              {progress} / {totalSets}
+          <div className="progress-bar1">
+            <div className="progress1" style={{ width: `${(progress / totalSets) * 100}%` }}>
+              {progress*25} points
             </div>
           </div>
         </>
