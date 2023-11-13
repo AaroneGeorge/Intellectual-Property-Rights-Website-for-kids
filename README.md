@@ -4,8 +4,8 @@ An interactive website that teaches IPR RIGHTS such as copyrights, trademarks, p
 Check it out: https://ipsforkids.netlify.app/
 
 
-CONTRIBUTORS: 
-</br>
+**CONTRIBUTORS:**
+</br></br>
 [<img src="https://github.com/deepesh1793.png" width="60px;"/>](https://github.com/deepesh1793)
 [<img src="https://github.com/gokul-sreenath.png" width="60px;"/>](https://github.com/gokul-sreenath)
 [<img src="https://github.com/Anishabhi.png" width="60px;"/>](https://github.com/Anishabhi)
