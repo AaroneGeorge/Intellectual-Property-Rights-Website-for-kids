@@ -14,4 +14,4 @@ CONTRIBUTORS:
 [Aarone](https://github.com/aaronegeorge)
 
 
-[<img src="https://github.com/deepesh1793.png" width="60px;"/><br /><sub><ahref="https://github.com/deepesh1793">deepesh1793</a></sub>](https://github.com/deepesh1793/GTA)
+[<img src="https://github.com/deepesh1793.png" width="60px;"/>](https://github.com/deepesh1793)
